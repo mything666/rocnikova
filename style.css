@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+.nadpis {
+    text-align: center;
+}
+
+.obdlznik {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 10px;
+    background-color: red;
+}
