@@ -1,19 +1,49 @@
-body {
-    background-color: lightblue;
+* {
+    background-color: #ffcc99;
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+.title {
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 0px;
+    border: 0px;
+    margin: 0px;
 }
 
 .nadpis {
+    background-color: #e49d67;
+    color: #a3481b;
+    margin: 0px;
     text-align: center;
+    line-height: 80px;
+    height: 80px;
 }
 
-.obdlznik {
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 10px;
-    background-color: red;
+.logo {
+    float: left;
+    border: 0px;
+    margin: 0px;
+    background-color: #e49d67;
+    color: #e49d67;
+}
+
+.menu {
+    position: absolute;
+    background-color: #e49d67;
+    left: 0px;
+    top: 80px;
+    height: 99%;
+}
+
+.obsah {
+    position: absolute;
+    left: 180px;
+    top: 90px;
+}
+
+ul, li, a {
+    background-color: #e49d67;
+    padding-right: 10px;
 }
