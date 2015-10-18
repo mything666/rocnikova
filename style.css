@@ -34,16 +34,44 @@
     background-color: #e49d67;
     left: 0px;
     top: 80px;
-    height: 99%;
+    width: 160px;
+    height: calc(100% - 80px);
+    border-right-style: outset;
+    border-top-style: outset;
 }
 
 .obsah {
     position: absolute;
     left: 180px;
     top: 90px;
+    padding-right: calc(100% - 245px);
+    padding-bottom: calc(100% - 60px);
+    padding-left: 160px;
+    margin-top: 10px;
+    border-style: outset;
+    border-color: #cc3300;
+    border-width: 5px;
+}
+
+img { 
+    background-color: #e49d67;
 }
 
 ul, li, a {
+    list-style-image: url('kvet.png');
     background-color: #e49d67;
     padding-right: 10px;
+}
+
+a:link {
+    color: #443266;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #663333;
+}
+
+a:hover {
+    color: #f1f0ff;
 }
