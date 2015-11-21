@@ -1,5 +1,5 @@
 * {
-    background-color: #ffcc99;
+    background-color: #0099cc;
 }
 
 .title {
@@ -13,8 +13,8 @@
 }
 
 .nadpis {
-    background-color: #e49d67;
-    color: #a3481b;
+    background-color: #ccffcc;
+    color: #3399FF;
     margin: 0px;
     text-align: center;
     line-height: 80px;
@@ -25,13 +25,13 @@
     float: left;
     border: 0px;
     margin: 0px;
-    background-color: #e49d67;
+    background-color: #ccffcc;
     color: #e49d67;
 }
 
 .menu {
     position: absolute;
-    background-color: #e49d67;
+    background-color: #ccffcc;
     left: 0px;
     top: 80px;
     width: 160px;
@@ -40,26 +40,50 @@
     border-top-style: outset;
 }
 
+.horne_menu {
+    position: static;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    display: inline;
+
+}
+
 .obsah {
     position: absolute;
     left: 180px;
     top: 90px;
-    padding-right: calc(100% - 245px);
-    padding-bottom: calc(100% - 60px);
-    padding-left: 160px;
-    margin-top: 10px;
-    border-style: outset;
-    border-color: #cc3300;
-    border-width: 5px;
+    border-style:outset;
+    width: calc(100% - 230px);
+    height: calc(100% - 110px);
+    padding: 10pt;
+    color:white
+}
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 3px double brown;
+    height: auto;
+    width: auto;
+    float: center;
+    text-align: center;
+}	
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #4A6D18;
 }
 
 img { 
-    background-color: #e49d67;
+    background-color: #ccffcc;
 }
 
 ul, li, a {
     list-style-image: url('kvet.png');
-    background-color: #e49d67;
+    background-color: #ccffcc;
     padding-right: 10px;
 }
 
@@ -69,9 +93,33 @@ a:link {
 }
 
 a:visited {
-    color: #663333;
+    color: #FF9900;
 }
 
 a:hover {
     color: #f1f0ff;
+}
+
+h1#vtexte {
+    color:FFCC00; text-align:center;
+
+}
+
+p#vtexte {
+    text-align:center;
+
+}
+
+pre { 
+    font-family:"arial CE";
+}
+
+p {
+    font-family:"arial CE";
+}
+
+iframe {
+	position:absolute;
+	top: 150px;
+	left: calc(50% - 280px);
 }
