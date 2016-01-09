@@ -9,30 +9,45 @@
                a = Number(document.getElementById("a").value);
                b = Number(document.getElementById("b").value);
             }
+
             function scitanie()
             {
                setValues();
                vysledok = a+b;
                alert("Výsledok po sčítaní "+vysledok);
             }
+
             function odcitanie()
             {
                 setValues();
                 vysledok = a-b;
                 alert("Výsledok po odčítaní "+vysledok);
             }
+
             function nasobenie()
             {
                 setValues();
                 vysledok =a*b;
                 alert("Výsledok po násobení "+vysledok);
             }
+
             function delenie()
             {
                 setValues();
                 vysledok = a/b;
                 alert("Výsledok po delení "+vysledok);
             }
+
+            function priklad_premenne()
+            {
+                var cislo = 5;
+                var veta = "Toto je veta.";
+                var pi = 3.14;
+                alert("Premenna cislo je: " + cislo + "\n" +
+                        "Premenna veta je: " + veta + "\n" +
+                        "Premenna pi je: " + pi + "\n");
+            }
+
       </script>
         <title>Web stránka</title>
     </head>
