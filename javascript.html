@@ -1,25 +1,87 @@
-<html>
+﻿<html>
     <link rel="stylesheet" type="text/css" href="style.css">
     <head>
-        <title>Web str�nka</title>
+        <script type="text/javascript">
+
+            var a,b,vysledok;
+            function setValues()
+            {
+               a = Number(document.getElementById("a").value);
+               b = Number(document.getElementById("b").value);
+            }
+            function scitanie()
+            {
+               setValues();
+               vysledok = a+b;
+               alert("Výsledok po sčítaní "+vysledok);
+            }
+            function odcitanie()
+            {
+                setValues();
+                vysledok = a-b;
+                alert("Výsledok po odčítaní "+vysledok);
+            }
+            function nasobenie()
+            {
+                setValues();
+                vysledok =a*b;
+                alert("Výsledok po násobení "+vysledok);
+            }
+            function delenie()
+            {
+                setValues();
+                vysledok = a/b;
+                alert("Výsledok po delení "+vysledok);
+            }
+      </script>
+        <title>Web stránka</title>
     </head>
     <body>
-        <div class="title">
-            <div class="logo"><a href="index.html"><img src="www.png" width="80px"></a> </div> 
-            <h1 class="nadpis">Web str�nka</h1>
+  <header>
+      <a name="hore">
+        <div class="nav">
+          <ul>
+            <li class="home"><a href="index.html">Domov</a></li>
+            <li class="html"><a href="html.html">HTML</a></li>
+            <li class="css"><a href="css.html">CSS</a></li>
+            <li class="javascript"><a class="active" href="javascript.html">JavaScript</a></li>
+            <li class="php"><a href="php.html">PHP</a></li>
+          </ul>
         </div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Domov</a></li>
-                <li><a href="html.html">Html</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="javascript.html">JavaScript</a></li>
-                <li><a href="PhP.html">PHP</a></li>
-            </ul>
-        </div>
+        </header>
        	 <div class="obsah">
-         		<h1 id=vtexte>JavaScript</h1>
-		
+         <h1 id="vtexte">JavaScript</h1>
+        <p id="vtexte">JavaScript je programovací jazyk, ktorý sa podobne ako kaskádové štýly vkladajú do HTML kódu. Pochádza z dolnej spoločnosti Nescape. Patrí do rodiny jazykov C, C++ a Java. Je to klientovský skript, to znamená, že sa program odosiela zo serveru do počítača a potom tam je vykonaný, narozdiel od serverových skriptov, ako PHP, ktoré sa prevedú a užívatelovi zobrazí iba výsledok.  </p>
+
+        <hr id="druhy">
+    <p id="vtexte"><a href=#kalkulajda>Kalkulačka</a></p>
+        <hr id="prvy">
+
+        <hr id="druhy">
+        
+
+
+
+        <hr id="prvy">
+
+
+
+        <hr id="druhy">
+        <h1><a name="kalkulajda">Kalkulačka</a></h1>
+        <div>
+            <input id="a" type="text"/>
+            <input id="b" type="text"/>
+            <input type="button" onclick="scitanie()" value="scitanie"/>
+            <input type="button" onclick="odcitanie()" value="odcitanie"/>
+
+            <input type="button" onclick="nasobenie()" value="nasobenie"/>
+            <input type="button" onclick="delenie()" value="delenie"/>
+        </div>
+        <hr id="prvy">
+
+
+		     <p align="center"><a href=#hore>Hore</a></p>
+
         </div>
     </body>
 </html>

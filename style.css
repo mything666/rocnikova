@@ -1,123 +1,31 @@
-/* {
+﻿/* {
     background-color: #0099cc;
 }
 */
 
-.title {
-    position: absolute; 
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    padding-top: 0px;
-    border: 0px;
-    margin: 0px;
-}
-
-.nadpis {
-    background-color: #ccffcc;
-    color: #3399FF;
-    margin: 0px;
-    text-align: center;
-    line-height: 80px;
-    height: 80px;
-}
-
-.logo {
-    float: left;
-    border: 0px;
-    margin: 0px;
-    background-color: #ccffcc;
-    color: #e49d67;
-}
-
-.menu {
-    position: absolute;
-    background-color: #ccffcc;
-    left: 0px;
-    top: 80px;
-    width: 160px;
-    height: calc(100% - 80px);
-    border-right-style: outset;
-    border-top-style: outset;
-}
-
-.horne_menu {
-    position: static;
-    width: 100%;
-    height: 20px;
-    top: 0;
-    left: 0;
-    display: inline;
-
-}
-
-.obsah {
-    position: absolute;
-    left: 180px;
-    top: 90px;
-    border-style:outset;
-    width: calc(100% - 230px);
-    height: calc(100% - 110px);
-    padding: 10pt;
-    color:white
-}
-
-div.img {
-    margin: 5px;
-    padding: 5px;
-    border: 3px double brown;
-    height: auto;
-    width: auto;
-    float: center;
-    text-align: center;
-}	
-
-div.img img {
-    display: inline;
-    margin: 5px;
-    border: 1px solid #4A6D18;
-}
-
-img { 
-    background-color: #ccffcc;
-}
-
-/*
-ul, li, a {
-    list-style-image: url('kvet.png');
-    background-color: #ccffcc;
-    padding-right: 10px;
-}
-    */
-
-a:link {
-    color: #443266;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #FF9900;
-}
-
-a:hover {
-    color: #f1f0ff;
-}
 
 h1#vtexte {
     color:FFCC00; text-align:center;
 
 }
 
-p#vtexte {
-    text-align:center;
+h1#priklad {
+    font-size: 40px;
 
-}
-
-pre { 
-    font-family:"arial CE";
 }
 
 p {
+    font-size: 20px;
+
+}
+
+p#vtexte {
+    font-family:"arial CE";
+    font-size: 20px;
+    text-align: justify;
+}
+
+pre { 
     font-family:"arial CE";
 }
 
@@ -174,24 +82,35 @@ dy {
     font-size: 1.4em;
   }
  
-  /* Option 1 - Display Inline */
+  
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
  
-  /* Options 2 - Float
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
-  .nav {
-    background-color: #444;
-  }
-  */
+
 }
 
+hr#druhy {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr#prvy {
+    display: block;
+    content: "";
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+p#cervena {
+    font-family:"arial CE";
+    font-size: 30px;
+    text-align: justify;
+    color:red;
+}
