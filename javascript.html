@@ -47,8 +47,27 @@
                         "Premenna veta je: " + veta + "\n" +
                         "Premenna pi je: " + pi + "\n");
             }
+            function renderCasu() {
+            var currentTime = new Date();
+            var h = currentTime.getHours();
+            var m = currentTime.getMinutes();
+            var s = currentTime.getSeconds();
+            setTimeout('renderCasu()',1000);
 
-      </script>
+                         
+             var hodiny = document.getElementById('clockDisplay');
+            hodiny.textContent = h + ":" + m + ":" + s + " ";
+            hodiny.innerText = h + ":" + m + ":" + s + " ";
+                     }   
+                            renderCasu();
+
+
+            function nahodne()
+            {
+                alert(Math.floor(Math.random()*100+1));
+                } 
+
+       </script>
         <title>Web stránka</title>
     </head>
     <body>
@@ -69,13 +88,17 @@
         <p id="vtexte">JavaScript je programovací jazyk, ktorý sa podobne ako kaskádové štýly vkladajú do HTML kódu. Pochádza z dolnej spoločnosti Nescape. Patrí do rodiny jazykov C, C++ a Java. Je to klientovský skript, to znamená, že sa program odosiela zo serveru do počítača a potom tam je vykonaný, narozdiel od serverových skriptov, ako PHP, ktoré sa prevedú a užívatelovi zobrazí iba výsledok.  </p>
 
         <hr id="druhy">
+    <p id="vtexte"><a href=#premena>Premenné</a></p>    
     <p id="vtexte"><a href=#kalkulajda>Kalkulačka</a></p>
+    <p id="vtexte"><a href=#Hodiny>Hodiny</a></p>
+    <p id="vtexte"><a href=#generator>Náhodné čísla</a></p>
         <hr id="prvy">
 
         <hr id="druhy">
-        <h1><a name="kalkulajda">Premenné</a></h1>
+        <h1><a name="premena">Premenné</a></h1>
         <p>Premenna je v programovaní označenie pre identifikátor, ktorý uschováva určitú informaciu počas behu programu. Je to reprezentacia miesta v pamäti.</p>
         <p>Deklarácia premennej.</p>
+        <img src="img/veta.png"align="right">
         <pre>var identifikator;</pre>
         <!-- co je to identifilator !-->
         <pre>var cislo = 5;</pre>
@@ -91,16 +114,38 @@
 
 
 
-        <hr id="druhy">
+        <hr id="druhy"><img src="img/kalkulacka.png"align="right">
         <h1><a name="kalkulajda">Kalkulačka</a></h1>
-        <div>
-            <input id="a" type="text"/>
-            <input id="b" type="text"/>
-            <input type="button" onclick="scitanie()" value="scitanie"/>
-            <input type="button" onclick="odcitanie()" value="odcitanie"/>
+        <div align=center>
+            
+            <input id="a" type="text" value="zadaj 1.číslo"/>
+            <input id="b" type="text" value="zadaj 2.číslo"/><br>
+            <input type="button" onclick="scitanie()" value="Sčítanie"/><br>
+            <input type="button" onclick="odcitanie()" value="Odčítanie"/><br>
 
-            <input type="button" onclick="nasobenie()" value="nasobenie"/>
-            <input type="button" onclick="delenie()" value="delenie"/>
+            <input type="button" onclick="nasobenie()" value="Násobenie"/><br>
+            <input type="button" onclick="delenie()" value="Delenie"/><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+        <hr id="prvy">
+
+
+
+        <hr id="druhy">
+        <img src="img/cas.png"align="right">
+        <h1><a name="Hodiny">Hodiny</a></h1>
+        <br><br><br><br><br>
+        <div id="clockDisplay" class="clockStyle">
+        </div>  
+        <hr id="prvy">
+
+        <hr id="druhy">
+        <img src="img/nahodne.png"align="right">
+        <h1><a name="generator">Nahodné čísla</a></h1>
+        <p>Generuje náhodné čísla do 100.
+        <div>
+        <input type="button" onclick="nahodne()" value="Generuj náhodné číslo"/>
         </div>
         <hr id="prvy">
 
