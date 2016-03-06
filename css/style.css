@@ -1,22 +1,18 @@
-﻿/* {
-    background-color: #0099cc;
+﻿body {
+    font-family: "Lucida Grande";
 }
-*/
-
 
 h1#vtexte {
     color:FFCC00; text-align:center;
-
 }
 
 h1#priklad {
     font-size: 40px;
-
 }
 
 p {
     font-size: 20px;
-
+    padding: 0 20px;
 }
 
 p#vtexte {
@@ -30,9 +26,9 @@ pre {
 }
 
 iframe {
-	position:absolute;
+	position: absolute;
 	top: 150px;
-	left: calc(50% - 280px);
+    float: center;
 }
 
 dy {
@@ -48,6 +44,7 @@ dy {
   padding: 0;
   margin: 0;
 }
+
 .nav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
@@ -116,10 +113,6 @@ p#cervena {
     text-decoration: underline;
 }
 
-
-
-
-
 .clockStyle {
   background-color:#444;
   border:#999 2px inset;
@@ -135,23 +128,27 @@ p#cervena {
 .ramik1 {
   border: 5px solid black;
   width: 250px;
-  }
- .ramik2 {
-  border: 5px dotted black;
-  width: 250px;
-  }
- .ramik3 {
-  border: 5px dashed black;
-  width: 250px;
-  }
- .ramik4 {
-  border: 5px double black;
-  width: 250px;
-  }   
- .ramik5 {
-  border-left: 5px solid green;
-  border-right: 5px dotted blue;
-  border-top: 5px dashed red;
-  border-bottom: 5px double black;
-  width: 250px;
-  } 
+}
+
+.ramik2 {
+    border: 5px dotted black;
+    width: 250px;
+}
+
+.ramik3 {
+    border: 5px dashed black;
+    width: 250px;
+}
+
+.ramik4 {
+    border: 5px double black;
+    width: 250px;
+}   
+
+.ramik5 {
+    border-left: 5px solid green;
+    border-right: 5px dotted blue;
+    border-top: 5px dashed red;
+    border-bottom: 5px double black;
+    width: 250px;
+} 
