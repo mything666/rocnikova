@@ -1,79 +1,13 @@
 ﻿<html>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="spin.js"></script>
     <head>
-        <script type="text/javascript">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="spin.js" type="text/javascript"></script>
+        <script src="func.js" type="text/javascript"></script>
 
-            var a,b,vysledok;
-            function setValues()
-            {
-               a = Number(document.getElementById("a").value);
-               b = Number(document.getElementById("b").value);
-            }
-
-            function scitanie()
-            {
-               setValues();
-               vysledok = a+b;
-               alert("Výsledok po sčítaní "+vysledok);
-            }
-
-            function odcitanie()
-            {
-                setValues();
-                vysledok = a-b;
-                alert("Výsledok po odčítaní "+vysledok);
-            }
-
-            function nasobenie()
-            {
-                setValues();
-                vysledok =a*b;
-                alert("Výsledok po násobení "+vysledok);
-            }
-
-            function delenie()
-            {
-                setValues();
-                vysledok = a/b;
-                alert("Výsledok po delení "+vysledok);
-            }
-
-            function priklad_premenne()
-            {
-                var cislo = 5;
-                var veta = "Toto je veta.";
-                var pi = 3.14;
-                alert("Premenna cislo je: " + cislo + "\n" +
-                        "Premenna veta je: " + veta + "\n" +
-                        "Premenna pi je: " + pi + "\n");
-            }
-            function renderCasu() {
-            var currentTime = new Date();
-            var h = currentTime.getHours();
-            var m = currentTime.getMinutes();
-            var s = currentTime.getSeconds();
-            setTimeout('renderCasu()',1000);
-
-                         
-             var hodiny = document.getElementById('clockDisplay');
-            hodiny.textContent = h + ":" + m + ":" + s + " ";
-            hodiny.innerText = h + ":" + m + ":" + s + " ";
-                     }   
-                            renderCasu();
-
-
-            function nahodne()
-            {
-                alert(Math.floor(Math.random()*100+1));
-                } 
-
-       </script>
         <title>Web stránka</title>
     </head>
     <body>
-  <header>
-      <a name="hore">
+      <a name="hore"></a>
         <div class="nav">
           <ul>
             <li class="home"><a href="index.html">Domov</a></li>
@@ -83,7 +17,6 @@
             <li class="php"><a href="php.html">PHP</a></li>
           </ul>
         </div>
-        </header>
        	 <div class="obsah">
          <h1 id="vtexte">JavaScript</h1>
         <p id="vtexte">JavaScript je programovací jazyk, ktorý sa podobne ako kaskádové štýly vkladajú do HTML kódu. Pochádza z dolnej spoločnosti Nescape. Patrí do rodiny jazykov C, C++ a Java. Je to klientovský skript, to znamená, že sa program odosiela zo serveru do počítača a potom tam je vykonaný, narozdiel od serverových skriptov, ako PHP, ktoré sa prevedú a užívatelovi zobrazí iba výsledok.  </p>
@@ -97,9 +30,9 @@
 
         <hr id="druhy">
         <h1><a name="premena">Premenné</a></h1>
-        <p>Premenna je v programovaní označenie pre identifikátor, ktorý uschováva určitú informaciu počas behu programu. Je to reprezentacia miesta v pamäti.</p>
+        <p>Premenná je v programovaní označenie pre identifikátor, ktorý uschováva určitú informáciu počas behu programu. Je to reprezentácia miesta v pamäti.</p>
         <p>Deklarácia premennej.</p>
-        <img src="images/veta.png"align="right">
+        <img src="images/veta.png" alt="Premenne" align="right">
         <pre>var identifikator;</pre>
         <!-- co je to identifilator !-->
         <pre>var cislo = 5;</pre>
@@ -115,18 +48,17 @@
 
 
 
-        <hr id="druhy"><img src="images/kalkulacka.png"align="right">
+        <hr id="druhy"><img src="images/kalkulacka.png" alt="Kalkulacka" align="right">
         <h1><a name="kalkulajda">Kalkulačka</a></h1>
         <div align=center>
             
             <input id="a" type="text" value="zadaj 1.číslo"/>
             <input id="b" type="text" value="zadaj 2.číslo"/><br>
-            <input type="button" onclick="scitanie()" value="Sčítanie"/><br>
-            <input type="button" onclick="odcitanie()" value="Odčítanie"/><br>
+            <input type="button" onclick="scitanie();" value="Sčítanie"/><br>
+            <input type="button" onclick="odcitanie();" value="Odčítanie"/><br>
 
             <input type="button" onclick="nasobenie()" value="Násobenie"/><br>
             <input type="button" onclick="delenie()" value="Delenie"/><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
         </div>
         <hr id="prvy">
@@ -134,7 +66,7 @@
 
 
         <hr id="druhy">
-        <img src="images/cas.png"align="right">
+        <img src="images/cas.png" alt="Hodiny" align="right">
         <h1><a name="Hodiny">Hodiny</a></h1>
         <br><br><br><br><br>
         <div id="clockDisplay" class="clockStyle">
@@ -142,9 +74,9 @@
         <hr id="prvy">
 
         <hr id="druhy">
-        <img src="images/nahodne.png"align="right">
+        <img src="images/nahodne.png" alt="generator" align="right">
         <h1><a name="generator">Nahodné čísla</a></h1>
-        <p>Generuje náhodné čísla do 100.
+        <p>Generuje náhodné čísla do 100.</p>
         <input type="button" onclick="nahodne()" value="Generuj náhodné číslo"/>
 
         

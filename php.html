@@ -1,23 +1,62 @@
-﻿<html>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<head>
-    <title>Web stránka</title>
-</head>
-<body>
-    <div class="nav">
-        <ul>
-            <li class="home"><a href="index.html">Domov</a></li>
-            <li class="html"><a href="html.html">HTML</a></li>
-            <li class="css"><a href="css.html">CSS</a></li>
-            <li class="javascript"><a href="javascript.html">JavaScript</a></li>
-            <li class="php"><a class="active">PHP</a></li>
-        </ul>
-    </div>
-    <div class="obsah">
-        <h1 id=vtexte> PHP = Hypertext Preprocessor</h1>
-        <p id="vtexte">
-            PHP (PHP: Hypertext Preprocessor) je populárny open source skriptovací jazyk, ktorý sa používa najmä na programovanie klientserver aplikácií (na strane servera) a pre vývoj dynamických webových stránok.
-        </p>
-    </div>
-</body>
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Web stránka</title>
+    </head>
+
+    <body>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="#" class="active">PHP</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>PHP - Hypertext Preprocessor</h1>
+        </header>
+
+        <aside>
+            <ul class="acont">
+                <li><a href="#vp">Všeobecný prehľad</a></li>
+                <li><a href="#his">História</a></li>
+                <li><a href="#pouz">Použitie</a></li>
+                <li><a href="#bezp">Bezpečnosť</a></li>
+            </ul>
+        </aside>
+
+        <section>
+
+            <p>Php je populárny open source skriptovací jazyk, ktorý sa používa najmä na programovanie klientserver aplikácií (na strane servera) a pre vývoj dynamických webových stránok.</p>
+
+            <h2 id="vp">Všeobecný prehľad</h2>
+            <img class="f-right" src="images/php.jpg" alt="PHP logo">
+            <p>PHP bolo inšpirované jazykmi podporujúcimi procedurálne programovanie. Najviac vlastností prebralo od jazyka C a jazyka Perl. V neskorších verziách bolo rozšírené o možnosť používať objekty.</p>
+
+            <p>Jedna zo zaujímavých vlastností PHP je, že umožňuje oveľa viac ako bežný skriptovací jazyk. Vďaka modulárnemu návrhu možno PHP používať aj na vývoj aplikácii s užívateľským rozhraním (GUI).</p>
+
+            <p>PHP dokáže spolupracovať s relačnými databázami, ako napríklad MySQL, Oracle, IBM DB2, Microsoft SQL Server, PostgreSQL alebo SQLite, pričom si stále zachováva jednoduchú a priamočiaru syntax. PHP beží na takmer všetkých najrozšírenejších operačných systémoch, vrátane UNIXu, Linuxu, Windows či Mac OS X. Spolupracuje s najrozšírenejšími webovými servermi.</p>
+
+            <h2 id="his">História</h2>
+            <p>PHP bolo pôvodne navrhnuté ako niekoľko skriptov v jazyku Perl, neskôr prepísaných do jazyka C. Autorom bol Rasmus Lerdorf v roku 1994. O rok neskôr svoje skripty zverejnil pod názvom "Personal Home Page Tools". Kombináciou s ďalším jeho programom Form Interpreter vzniklo PHP/FI. Zeev Suraski a Andi Gutmans, dvaja izraelskí vývojári prepísali syntaktický analyzátor (parser) v roku 1997 na novšiu verziu, ktorá sa stala základom PHP 3. Krátko po zverejnení verzie PHP 3 bola spustená aj oficiálna stránka.</p>
+
+            <h2 id="pouz">Použitie</h2>
+            <p>PHP je skriptovací jazyk, ktorý je špeciálne navrhnutý na tvorbu web stránok bežiacich na webovom serveri. Všetok PHP kód je vykonávaný pomocou PHP runtime, aby dynamicky vytvoril obsah na webovej stránke. Taktiež môže byť využitý na skriptovanie z príkazového riadku alebo klientovo orientované aplikácie s grafickým rozhraním. PHP môže byť nasadené na väčšine Webových serverov, operačných systémov a platformách a môže sa používať v spojení s mnohými relačnými databázami. Mnoho webhostingov ponúka podporu PHP pre svojich klientov. PHP je zadarmo dostupné a PHP Group poskytuje úplný zdrojový kód pre používateľov, aby ho mohli dotvárať, meniť a rozširovať pre ich vlastné použitie. PHP sa primárne správa ako filter, ktorý má na vstupe súbor, alebo prúd dát obsahujúci text a/alebo PHP inštrukcie a na výstupe prúd dát najčastejšie vo forme HTML.</p>
+
+            <h2 id="bezp">Bezpečnosť</h2>
+            <p>Okolo 30 % všetkých zraniteľností zaznamenaných v National Vulnerability Database sú spojené s PHP. Tieto zraniteľnosti sú spôsobené nedodržaním pravidiel praktického programovania. Technické chyby samotného jazyka alebo jeho základných knižníc nie sú také časté (okolo 1 % zo všetkých chýb v roku 2008). Keďže programátori robia chyby, niektoré jazyky obsahujú kontrolu chýb na automatické zisťovanie nedostatočnej validácie vstupu, ktorá vedie k mnohým problémom. Takáto funkcia je vyvíjaná aj pre PHP, ale jej zahrnutie a vydanie bolo v minulosti niekoľkokrát zamietnuté. Existujú však pokročilé ochranné záplaty ako napríklad Suhosin a Hardening-Patch, ktoré sú špeciálne navrhnuté pre prostredia webhostingu.</p>
+
+        </section>
+
+        <footer>
+            <hr>
+            <p>&copy; 2016 Marek Dusík</p>
+        </footer>
+    </body>
 </html>

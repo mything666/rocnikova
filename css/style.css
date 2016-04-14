@@ -1,15 +1,48 @@
 ﻿body {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Lucida Grande";
     padding-top: 45px;
 }
 
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+aside {
+    float: right;
+}
+
+.f-right {
+    float: right;
+}
+
+h1 {
     padding: 0;
-    z-index: 1
+    margin: 0;
+    color: #1D3461;
+    font-family: arial, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: #0D1B1E;
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.acont li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.acont a {
+     color: #028090;
+}
+
+.acont a:hover {
+     color: #00A896;
 }
 
 h1#vtexte {
@@ -26,77 +59,66 @@ p {
     padding: 0 20px;
 }
 
+footer > p {
+    font-size: 14px;
+}
+
 p#vtexte {
-    font-family:"arial CE";
     font-size: 20px;
-    text-align: justify;
 }
 
-pre { 
-    font-family:"arial CE";
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 1
 }
 
-iframe {
-	position: absolute;
-	top: 150px;
-    float: center;
-}
-
-dy {
-  margin: 0;
-  padding: 0;
-  background: #ccc;
-}
- 
 .nav ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    background-color: #39A0ED;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #2E7AA8;
+}
+
+.nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
 }
 
 .nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-}
- 
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
-}
- 
-.nav a:hover {
-  background-color: #005f5f;
-}
- 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
-}
- 
-@media screen and (min-width: 600px) {
-  .nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
     width: 120px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
-  }
- 
-  
-  .nav li {
     display: inline-block;
     margin-right: -4px;
-  }
- 
 
+    border-bottom: 1px solid #02C39A;
+}
+
+pre {
+    padding: 0 20px;
 }
 
 hr#druhy {
@@ -126,20 +148,20 @@ p#cervena {
 }
 
 .clockStyle {
-  background-color:#444;
-  border:#999 2px inset;
-  padding:6px;
-  color:#0FF;
-  font-family:"Arial Black", Gadget, sans-serif;
+    background-color:#444;
+    border:#999 2px inset;
+    padding:6px;
+    color:#0FF;
+    font-family:"Arial Black", Gadget, sans-serif;
     font-size:16px;
     font-weight:bold;
-  letter-spacing: 2px;
-  display:inline;
+    letter-spacing: 2px;
+    display:inline;
 }
 
 .ramik1 {
-  border: 5px solid black;
-  width: 250px;
+    border: 5px solid black;
+    width: 250px;
 }
 
 .ramik2 {
