@@ -1,93 +1,82 @@
 ﻿<html>
     <head>
+
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="spin.js" type="text/javascript"></script>
-        <script src="func.js" type="text/javascript"></script>
+        <script src="js/spin.js" type="text/javascript"></script>
+        <script src="js/func.js" type="text/javascript"></script>
 
         <title>Web stránka</title>
+
     </head>
+
     <body>
-      <a name="hore"></a>
-        <div class="nav">
-          <ul>
-            <li class="home"><a href="index.html">Domov</a></li>
-            <li class="html"><a href="html.html">HTML</a></li>
-            <li class="css"><a href="css.html">CSS</a></li>
-            <li class="javascript"><a class="active" href="javascript.html">JavaScript</a></li>
-            <li class="php"><a href="php.html">PHP</a></li>
-          </ul>
-        </div>
-       	 <div class="obsah">
-         <h1 id="vtexte">JavaScript</h1>
-        <p id="vtexte">JavaScript je programovací jazyk, ktorý sa podobne ako kaskádové štýly vkladajú do HTML kódu. Pochádza z dolnej spoločnosti Nescape. Patrí do rodiny jazykov C, C++ a Java. Je to klientovský skript, to znamená, že sa program odosiela zo serveru do počítača a potom tam je vykonaný, narozdiel od serverových skriptov, ako PHP, ktoré sa prevedú a užívatelovi zobrazí iba výsledok.  </p>
+        <a name="hore"></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a class="active" href="#">JavaScript</a></li>
+                <li><a href="php.html">PHP</a></li>
+            </ul>
+        </nav>
 
-        <hr id="druhy">
-    <p id="vtexte"><a href=#premena>Premenné</a></p>    
-    <p id="vtexte"><a href=#kalkulajda>Kalkulačka</a></p>
-    <p id="vtexte"><a href=#Hodiny>Hodiny</a></p>
-    <p id="vtexte"><a href=#generator>Náhodné čísla</a></p>
-        <hr id="prvy">
+        <header>
+            <h1>JavaScript</h1>
+        </header>
 
-        <hr id="druhy">
-        <h1><a name="premena">Premenné</a></h1>
-        <p>Premenná je v programovaní označenie pre identifikátor, ktorý uschováva určitú informáciu počas behu programu. Je to reprezentácia miesta v pamäti.</p>
-        <p>Deklarácia premennej.</p>
-        <img src="images/veta.png" alt="Premenne" align="right">
-        <pre>var identifikator;</pre>
-        <!-- co je to identifilator !-->
-        <pre>var cislo = 5;</pre>
-        <pre>var veta = "Toto je veta.";</pre>
-        <pre>var pi = 3.14;</pre>
-        <div>
-            <input type="button" onclick="priklad_premenne()" value="Vypis premenne">
-        </div>
+        <aside>
+            <ul class="acont">
+                <li><a href=#premena>Premenné</a></li>    
+                <li><a href=#kalkulacka>Kalkulačka</a></li>
+                <li><a href=#hodiny>Hodiny</a></li>
+                <li><a href=#generator>Náhodné čísla</a></li>
+            </ul>
+        </aside>
 
+        <section>
+            <p>JavaScript je programovací jazyk, ktorý sa podobne ako kaskádové štýly vkladajú do HTML kódu. Pochádza z dolnej spoločnosti Nescape. Patrí do rodiny jazykov C, C++ a Java. Je to klientovský skript, to znamená, že sa program odosiela zo serveru do počítača a potom tam je vykonaný, narozdiel od serverových skriptov, ako PHP, ktoré sa prevedú a užívatelovi zobrazí iba výsledok.</p>
 
+            <h2><a id="premena">Premenné</a></h2>
+            <p>Premenná je v programovaní označenie pre identifikátor, ktorý uschováva určitú informáciu počas behu programu. Je to reprezentácia miesta v pamäti.</p>
+            <h3>Deklarácia premennej.</h3>
+            <img src="images/veta.png" alt="Premenne" align="right">
+            <pre>var identifikator;</pre>
+            <pre>var cislo = 5;</pre>
+            <pre>var veta = "Toto je veta.";</pre>
+            <pre>var pi = 3.14;</pre>
+            <button class="kbutton" type="button" onclick="priklad_premenne()">Vypis premenne</button>
 
-        <hr id="prvy">
+            <h2><a id="kalkulacka">Kalkulačka</a></h2>
+            <div>
 
+                <input class="kinput" id="a" type="text" value="zadaj 1.číslo"/>
+                <input class="kinput" id="b" type="text" value="zadaj 2.číslo"/><br>
 
+                <button class="kbutton" type="button" onclick="scitanie();">Sčítanie</button>
+                <button class="kbutton" type="button" onclick="odcitanie();">Odčítanie</button>
+                <button class="kbutton" type="button" onclick="nasobenie()">Násobenie</button>
+                <button class="kbutton" type="button" onclick="delenie()">Delenie</button>
 
-        <hr id="druhy"><img src="images/kalkulacka.png" alt="Kalkulacka" align="right">
-        <h1><a name="kalkulajda">Kalkulačka</a></h1>
-        <div align=center>
-            
-            <input id="a" type="text" value="zadaj 1.číslo"/>
-            <input id="b" type="text" value="zadaj 2.číslo"/><br>
-            <input type="button" onclick="scitanie();" value="Sčítanie"/><br>
-            <input type="button" onclick="odcitanie();" value="Odčítanie"/><br>
+            </div>
 
-            <input type="button" onclick="nasobenie()" value="Násobenie"/><br>
-            <input type="button" onclick="delenie()" value="Delenie"/><br>
+            <h2><a id="hodiny">Hodiny</a></h2>
+            <img src="images/cas.png" alt="Hodiny" align="right">
+            <div id="clockDisplay" class="clockStyle"></div>  
 
-        </div>
-        <hr id="prvy">
+            <h2><a id="generator">Nahodné čísla</a></h2>
+            <img src="images/nahodne.png" alt="generator" align="right">
+            <p>Generuje náhodné čísla do 100.</p>
+            <button class="kbutton" type="button" onclick="nahodne()">Generuj náhodné číslo</button>
 
+            <p align="center"><a href=#hore>Hore</a></p>
 
+        </section>
 
-        <hr id="druhy">
-        <img src="images/cas.png" alt="Hodiny" align="right">
-        <h1><a name="Hodiny">Hodiny</a></h1>
-        <br><br><br><br><br>
-        <div id="clockDisplay" class="clockStyle">
-        </div>  
-        <hr id="prvy">
+        <footer>
+            <hr>
+            <p>&copy; 2016 Marek Dusík</p>
+        </footer>
 
-        <hr id="druhy">
-        <img src="images/nahodne.png" alt="generator" align="right">
-        <h1><a name="generator">Nahodné čísla</a></h1>
-        <p>Generuje náhodné čísla do 100.</p>
-        <input type="button" onclick="nahodne()" value="Generuj náhodné číslo"/>
-
-        
-        <hr id="prvy">
-
-        <hr id="druhy">
-        <div id=foo></div>
-        <hr id="prvy">
-
-         <p align="center"><a href=#hore>Hore</a></p>
-
-        </div>
     </body>
 </html>

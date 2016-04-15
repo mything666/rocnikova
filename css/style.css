@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: "Lucida Grande";
-    padding-top: 45px;
+    padding-top: 50px;
 }
 
 aside {
@@ -30,6 +30,16 @@ h2 {
     font-size: 25px;
     padding-left: 20px;
     font-weight: bold;
+    clear: both;
+}
+
+h3 {
+    color: #0D1B1E;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    clear: both;
 }
 
 .acont li {
@@ -117,6 +127,38 @@ p#vtexte {
     border-bottom: 1px solid #02C39A;
 }
 
+.kbutton {
+    margin: 20px 20px;
+    border: 2px solid #39A0ED;
+    background-color: #39A0ED;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.kbutton:hover {
+    background-color: #2E7AA8;
+    color: white;
+}
+
+.kinput:first-of-type {
+    margin-left: 20px;
+}
+
+.kinput:hover {
+    color: #444;
+}
+
+.kinput {
+    width: 200px;
+    margin: 0px 10px;
+}
+
 pre {
     padding: 0 20px;
 }
@@ -148,10 +190,11 @@ p#cervena {
 }
 
 .clockStyle {
-    background-color:#444;
-    border:#999 2px inset;
+    margin-left: 20px;
+    background-color: #39A0ED;
+    border:#39A0ED 2px solid;
     padding:6px;
-    color:#0FF;
+    color:#FFF;
     font-family:"Arial Black", Gadget, sans-serif;
     font-size:16px;
     font-weight:bold;
