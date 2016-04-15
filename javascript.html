@@ -1,4 +1,6 @@
-﻿<html>
+﻿<!DOCTYPE html>
+
+<html>
     <head>
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -28,6 +30,7 @@
         <aside>
             <ul class="acont">
                 <li><a href=#premena>Premenné</a></li>    
+                <li><a href=#funkcie>Funkcie</a></li>    
                 <li><a href=#kalkulacka>Kalkulačka</a></li>
                 <li><a href=#hodiny>Hodiny</a></li>
                 <li><a href=#generator>Náhodné čísla</a></li>
@@ -46,6 +49,14 @@
             <pre>var veta = "Toto je veta.";</pre>
             <pre>var pi = 3.14;</pre>
             <button class="kbutton" type="button" onclick="priklad_premenne()">Vypis premenne</button>
+
+            <h2><a id="funkcie">Funkcie</a></h2>
+            <p>Funkcie sú jedným zo základných prvkov JavaScriptu. Je to určitá časť kódu, ktorá vykonáva nejakú úlohu. Na to, aby sme mohli volať funkciu v HTML kóde, musíme ju najprv zadefinovať.</p>
+            <p>Definícia funkcie pozostáva z troch častí: názvu samotnej funkcie, zoznam argumentov pre funkciu uzavretých v zátvorkách a samotného zápisu funkcie, ktorý je uzavretý v zložených zátvorkách. Zápis môže odkazovať na ďalšie funkcie, ale tie musia byť samozrejme tiež najprv zadefinované. Najvýhodnejšie je definovať funkcie v hlavičke HTML dokumentu (prípadne ich vložiť do separátneho súboru volaného v hlavičke), aby pri načítaní samotnej stránky boli už k dispozícii.</p>
+            <p class="code">function nadruhu(cislo)</p>
+            <p class="code">&emsp;returncislo * cislo;</p>
+            <p class="code">}</p>
+
 
             <h2><a id="kalkulacka">Kalkulačka</a></h2>
             <div>

@@ -42,6 +42,10 @@ h3 {
     clear: both;
 }
 
+img {
+    margin: 10px 15px;
+}
+
 .acont li {
     list-style-type: none;
     margin-top: 5px;
@@ -96,6 +100,7 @@ p#vtexte {
 
 .nav a {
     text-decoration: none;
+    font-variant: small-caps;
     color: #fff;
     display: block;
     transition: .3s background-color;
@@ -163,30 +168,17 @@ pre {
     padding: 0 20px;
 }
 
-hr#druhy {
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
+.code {
+    font-family: Consolas,monaco,monospace;
 }
 
-hr#prvy {
-    display: block;
-    content: "";
-    height: 30px;
-    border-style: solid;
-    border-color: black;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
+.clr {
+    clear: both;
 }
 
-p#cervena {
-    font-family:"arial CE";
-    font-size: 30px;
-    text-align: justify;
-    color:red;
-    text-decoration: underline;
+.tbl {
+    margin-left: 20px;
+    width: auto;
 }
 
 .clockStyle {
@@ -201,31 +193,3 @@ p#cervena {
     letter-spacing: 2px;
     display:inline;
 }
-
-.ramik1 {
-    border: 5px solid black;
-    width: 250px;
-}
-
-.ramik2 {
-    border: 5px dotted black;
-    width: 250px;
-}
-
-.ramik3 {
-    border: 5px dashed black;
-    width: 250px;
-}
-
-.ramik4 {
-    border: 5px double black;
-    width: 250px;
-}   
-
-.ramik5 {
-    border-left: 5px solid green;
-    border-right: 5px dotted blue;
-    border-top: 5px dashed red;
-    border-bottom: 5px double black;
-    width: 250px;
-} 

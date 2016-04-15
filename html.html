@@ -1,100 +1,116 @@
-﻿<html>
+﻿<!DOCTYPE html>
+
+<html>
+
     <head>
+
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/example.css">
         <title>Web stránka</title>
+
     </head>
+
     <body>
-        <header>
-        <a name="hore"></a>
-        <div class="nav">
+        <a id="hore"></a>
+        <nav class="nav">
             <ul>
-                <li ><a href="index.html">Domov</a></li>
-                <li ><a class="active" href="html.html">HTML</a></li>
-                <li ><a href="css.html">CSS</a></li>
-                <li ><a href="javascript.html">JavaScript</a></li>
-                <li ><a href="php.html">PHP</a></li>
+                <li><a href="index.html">Domov</a></li>
+                <li><a class="active" href="#">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="php.html">PHP</a></li>
             </ul>
-        </div>
+        </nav>
+
+        <header>
+            <h1 id="vtexte">HTML = HyperText Markup Language</h1>
         </header>
-        <h1 id="vtexte">HTML = HyperText Markup Language</h1>
-        <p>
-        Html je značkový jazyk určený na vytváranie webových stránok a iných informácií zobraziteľných vo webovom prehliadači. 
-        HTML kladie dôraz skôr na prezentáciu informácií (odseky, fonty, úprava písma, tabuľky atď. )ako na sémantiku (význam slov).
-        V tejto časti predstavým jednoduché html tagy a ich funkcie v stránke.
-        </p>
 
+        <aside>
+            <ul class="acont">
+                <li><a href=#tagy>HTML tagy</a></li>
+                <li><a href=#vzhlad>Zmena vzhľadu</a></li>
+                <li><a href=#obrazok>Obrázok, čiara a zarovnanie</a></li>
+                <li><a href=#odkaz>Odkazy</a></li>
+                <li><a href=#tabulka>Tabuľky</a></li>
+            </ul>
+        </aside>
 
-        <hr id="druhy">
-        <p id="vtexte"><a href=#vzhlad>Zmena vzhľadu</a></p>
-        <p id="vtexte"><a href=#Obrazok>Obrázok, čiara a zarovnanie</a></p>
-        <p id="vtexte"><a href=#Tabulka>Tabuľka</a></p>
-        <hr id="prvy">
+        <section>
+            <p>Html je značkový jazyk určený na vytváranie webových stránok a iných informácií zobraziteľných vo webovom prehliadači. HTML kladie dôraz skôr na prezentáciu informácií (odseky, fonty, úprava písma, tabuľky atď. )ako na sémantiku (význam slov). V tejto časti predstavým jednoduché html tagy a ich funkcie v stránke.</p> 
 
+            <h2><a id="tagy">HTML tagy</a></h2>
+            <p>HTML stránka pozostáva z HTML elementov. HTML elementy definujú HTML značky. Príkladom HTML elementu môže byť nadpis (H1, H2, ...), obrázok (IMG), formulár (FORM) a iné. HTML element môže mať atribúty. Atribút je doplňujúca informácia HTML elementu. Príkladom atribútu elementu img môže byť atribút src:</p>
+            <p class="code">&#60;img src=&#34;subor.jpg&#34;&#62;</p>
 
-        <hr id="druhy">
-        <h1 id="priklad"><a name="vzhlad">Zmena vzhľadu</a></h1>
-        <img src="images/nadpis.png"align="right">
-        <hr>
-        <h1>Nadpis</h1>
-        <p>
-        Odstavec s <b>tučným textom</b>, s <i>kurzivou</i>.
-        </p>
-        <span style="color:blue;">Modrý text.</span></p>
-        <h2>Nadpis druhej úrovne</h2>
-        <p>
-        Odstavec s <i><b>tučným kurzivom.</b></i><br>
-        Text po zalomení riadku patrí do toho istého odstavcu.
-        </p>
-        <hr id="prvy">
+            <h2><a id="vzhlad">Zmena vzhľadu</a></h2>
+            <img src="images/nadpis.png" align="right" alt="Nadpis">
+            <div class="clr small_page">
+                <h1 id="ex">Nadpis</h1>
+                <p>Odstavec s <b>tučným textom</b>, s <i>kurzivou</i>.</p>
+                <p><span style="color:blue;">Modrý text.</span></p>
+                <h2>Nadpis druhej úrovne</h2>
+                <p>Odstavec s <i><b>tučným kurzivom.</b></i><br>Text po zalomení riadku patrí do toho istého odstavcu.</p>
+            </div>
 
-        <hr id="druhy">
-        <h1 id="priklad"><a name="Obrazok">Obrázok, čiara a zarovnanie</a></h1>
-        <hr>
-        <p><strong>Obrázok</strong> sa do dokumentu vkladá nepárovým tagom.</p>
-        <img src="images/or.jpg" align="center">
-        <img src="images/obrazok.png" align="right">
-        <hr>
-        <img src="images/hr.png" align="right">
-        <p><b>Horizontálna čiara</b> sa vkladá tagom <b>HR</b>. Má atribúty ktorými nastavuje šírku, zarovnanie a farbu.</p>
-        <hr color="#444" size="20">
-        <hr>
-        <p><b/>Zarovanie odstavcu na stred</b></p>
-        <p>Väčšina objektov(odstavce, tabulky, obrázky a pod.) na stránke sa môže zarovnat vlavo, na stred alebo na pravo.Robí sa to všeobecným atribútom "p align" +hodnota(left,center,right). Napríklad tento odstavec <img src="images/text.png" align="right"></p><p align="center">je deklarovaný zápisom a aj zarovnaný na stred</p>
+            <h2><a id="obrazok">Obrázok, čiara a zarovnanie</a></h2>
+            <hr>
+            <p><strong>Obrázok</strong> sa do dokumentu vkladá nepárovým tagom<em>&#60;img&#62;</em>.</p>
+            <img src="images/or.jpg" alt="macka">
+            <img src="images/obrazok.png" width="450" align="right" alt="HTML img syntax">
+            <hr class="clr">
+            <img src="images/hr.png" align="right" alt="HTML hr syntax">
+            <p><b>Horizontálna čiara</b> sa vkladá tagom <b>HR</b>. Má atribúty ktorými nastavuje šírku, zarovnanie a farbu.</p>
+            <hr style="background-color: #444;" size="20">
+            <hr>
+            <p><b>Zarovanie odstavcu na stred</b></p>
+            <p>Väčšina objektov(odstavce, tabulky, obrázky a pod.) na stránke sa môže zarovnat vlavo, na stred alebo na pravo.Robí sa to všeobecným atribútom "p align" +hodnota(left,center,right). Napríklad tento odstavec:</p>
+            <p align="center">je deklarovaný zápisom a aj zarovnaný na stred</p>
+            <img src="images/text.png" align="right" alt="Zarovnanie">
 
-        <hr id="prvy">
+            <h2><a id="odkaz">Odkazy</a></h2>
+            <p>Odkazy je možné nájsť skoro na všetkých stránkach. Dovoľujú používateľom "preklikávať" sa stránkami.</p>
+            <p class="code">&#60;a href=&#34;http://google.com&#34;&#62;Názov odkazu&#60;/a&#62;</p>
+            <p class="code">&#60;a href=&#34;#odkazy&#34;&#62;Odkazy&#60;/a&#62;</p>
 
-        <hr id="druhy">
-        <h1 id="priklad"><a name="Tabulka">Tabuľka</a></h1>
-        <p>Na vytvorenie tabulky používame párove tagy: table, tr, td.</p>
-        <p>TR vytvára riadky v tabulke, TD vytvára bunky a TH sa dá použiť namiesto TD ale je to hlavička tabulky.</p>
-        <img src="images/tabulka.png" align="right">
+            <h2><a id="tabulka">Tabuľky</a></h2>
+            <p>Na vytvorenie tabulky používame párove tagy: table, tr, td.</p>
+            <p>TR vytvára riadky v tabulke, TD vytvára bunky a TH sa dá použiť namiesto TD ale je to hlavička tabulky.</p>
+            <img src="images/tabulka.png" align="right" alt="Tabulka">
 
+            <table border="2" class="tbl">
+                <tr>
+                    <th>Meno</th>
+                    <th>Priezvisko</th>      
+                    <th>Bydlisko</th>
+                </tr>
+                <tr>
+                    <td>Jožko</td>
+                    <td>Mrkvička</td>      
+                    <td>Trnava</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>šalátová</td>        
+                    <td>Bratislava</td>
+                </tr>
+                <tr>
+                    <td>Stano</td>
+                    <td>Píšťala</td>        
+                    <td>Nitra</td>
+                </tr>
+            </table>
 
-        <table border="2" bordercolor="#444" width=500px height=350px>
-            <tr>
-                <th>Meno</th>
-                <th>Priezvisko</th>      
-                <th>Bydlisko</th>
-            </tr>
-            <tr>
-                <td>Jožko</td>
-                <td>Mrkvička</td>      
-                <td>Trnava</td>
-            </tr>
-            <tr>
-                <td>Eve</td>
-                <td>šalátová</td>        
-                <td>Bratislava</td>
-            </tr>
-            <tr>
-                <td>Stano</td>
-                <td>Píšťala</td>        
-                <td>Nitra</td>
-            </tr>
-        </table>
+            <div class="clr"></div>
 
-        <hr id="prvy">
+            <p align="center"><a href=#hore>Hore</a></p>
 
-        <p align="center"><a href=#hore>Hore</a></p>
+        </section> 
+
+        <footer>
+            <hr>
+            <p>&copy; 2016 Marek Dusík</p>
+        </footer>
+
     </body>
 </html>
